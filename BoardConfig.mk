@@ -198,6 +198,7 @@ TARGET_PER_MGR_ENABLED := true
 
 # Power
 TARGET_POWERHAL_VARIANT := qcom
+TARGET_TAP_TO_WAKE_NODE := "/sys/bus/i2c/drivers/fts_ts/3-0038/fts_gesture_dtwake"
 
 # Properties
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop

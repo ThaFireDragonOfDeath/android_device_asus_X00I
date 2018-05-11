@@ -197,6 +197,10 @@ on boot
     chown root system /sys/kernel/dload/emmc_dload
     chmod 0660 /sys/kernel/dload/emmc_dload
 
+    # Touchscreen
+    chown system system /sys/bus/i2c/drivers/fts_ts/3-0038/fts_gesture_dtwake
+    chmod 0664 /sys/bus/i2c/drivers/fts_ts/3-0038/fts_gesture_dtwake
+
 # msm specific files that need to be created on /data
 on post-fs-data
     #Create directories for Fingerprint
