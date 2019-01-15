@@ -150,6 +150,9 @@ TARGET_LIBINIT_DEFINES_FILE := device/asus/X00I/init/init_X00I.cpp
 TARGET_PROVIDES_KEYMASTER := true
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
+# Lights
+TARGET_PROVIDES_LIBLIGHT := true
+
 # Lineage Hardware
 BOARD_HARDWARE_CLASS += hardware/lineage/lineagehw
 
