@@ -26,16 +26,27 @@
  */
 
 #include <fcntl.h>
+#include <cstdlib>
+#include <fstream>
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 #include <sys/sysinfo.h>
 
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 
+#include <android-base/file.h>
+#include <android-base/properties.h>
+#include <android-base/strings.h>
+
 #include "vendor_init.h"
 #include "property_service.h"
-#include "log.h"
-#include "util.h"
+
+using android::base::GetProperty;
+using android::init::property_set;
+using android::base::ReadFileToString;
+using android::base::Trim;
 
 char const *heapstartsize;
 char const *heapgrowthlimit;
@@ -88,7 +99,7 @@ void property_override(char const prop[], char const value[])
 
 void vendor_load_properties()
 {
-    std::string project = property_get("ro.boot.platform_boardid");
+    std::string project = GetProperty("ro.boot.platform_boardid", "MSM8937");
     property_set("ro.product.name", "WW_Phone");
     if (project == "MSM8937") {
         property_override("ro.build.product", "msm8937_64");

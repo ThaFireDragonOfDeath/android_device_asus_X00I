@@ -16,6 +16,7 @@
 
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
+
 #define BTM_DEF_LOCAL_NAME   "Asus Zenfone 4 Max"
 // Disables read remote device feature
 #define BTA_SKIP_BLE_READ_REMOTE_FEAT FALSE
@@ -26,8 +27,8 @@
 #define BTA_BLE_SKIP_CONN_UPD  FALSE
 #define BLE_PERIPHERAL_ADV_NAME  FALSE
 #define BT_CLEAN_TURN_ON_DISABLED 1
-
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
+#define BTM_SCO_ENHANCED_SYNC_ENABLED FALSE
 #define BTM_WBS_INCLUDED TRUE
 #define BTIF_HF_WBS_PREFERRED TRUE
 #endif
