@@ -17,7 +17,7 @@ bool fm_checkFileExist(const char* sFilePath) {
 
 int main(int argc, char* argv[]) {
     while(fm_checkFileExist("/data/lastdmesg_service/enable") == true) {
-        system("/system/bin/dmesg > /data/lastdmesg_service/mast_dmesg.txt");
+        system("/system/bin/dmesg > /data/lastdmesg_service/last_dmesg.txt");
         sleep(30);
     }
     
