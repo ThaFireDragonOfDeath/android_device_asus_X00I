@@ -225,7 +225,9 @@ vendor/lib/libseemore.so
 -vendor/lib/libts_detected_face_hal.so
 -vendor/lib/libts_face_beautify_hal.so
 vendor/lib/libubifocus.so
-
+lib/vendor.qti.hardware.camera.device@1.0.so
+lib64/vendor.qti.hardware.camera.device@1.0.so
+lib/libjpegHWCompress.so
 
 # Camera Arcsoft - from Stock
 lib/libBeautyShotWrapper.so
@@ -238,6 +240,8 @@ lib/libarcsoft_panorama_burstcapture.so
 lib/libarcsoft_piczoom.so
 lib/libarcsoft_videostab.so
 lib/libmpbase.so
+lib/libarcsoft_picselfie_algorithm.so
+lib/libcamera_selfie.so
 vendor/etc/style.cng
 vendor/lib/libarcsoft_arc3dnr_intf.so
 vendor/lib/libarcsoft_arcpiczoom_intf.so
@@ -675,6 +679,7 @@ vendor/lib64/hw/gxfingerprint.default.so
 vendor/lib64/libfp_client.so
 #vendor/lib64/libfpjni.so (not found)
 vendor/lib64/libfpservice.so
+vendor/lib64/libvendor.goodix.hardware.fingerprint.hwbinder@2.1.so
 
 # Gatekeeper - from Stock
 vendor/lib/hw/gatekeeper.msm8937.so
@@ -759,6 +764,12 @@ vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
+vendor/lib/egl/libESXEGL_adreno.so
+vendor/lib64/egl/libESXEGL_adreno.so
+vendor/lib/egl/libESXGLESv1_CM_adreno.so
+vendor/lib64/egl/libESXGLESv1_CM_adreno.so
+vendor/lib/egl/libESXGLESv2_adreno.so
+vendor/lib64/egl/libESXGLESv2_adreno.so
 
 # Graphics vulkan - from Stock
 #vendor/lib/hw/vulkan.msm8953.so

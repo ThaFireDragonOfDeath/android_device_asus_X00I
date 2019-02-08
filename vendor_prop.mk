@@ -65,9 +65,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.opengles.version=196610 \
     ro.qualcomm.cabl=2 \
-    ro.sf.lcd_density=320
+    ro.sf.lcd_density=320 \
+    vendor.display.enable_default_color_mode=1
 
 # Fm
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -89,12 +89,21 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.wfd.virtual=0 \
     sdm.debug.disable_rotator_split=1 \
     sdm.debug.disable_skip_validate=1 \
-    sdm.perf_hint_window=50
+    sdm.perf_hint_window=50 \
+    debug.sf.enable_hwc_vds=1 \
+    persist.hwc.mdpcomp.enable=true \
+    debug.mdpcomp.logs=0 \
+    dalvik.vm.heapsize=36m \
+    debug.enable.sglscale=1 \
+    ro.opengles.version=196609
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.ims_volte_enable=1 \
+    persist.radio.videopause.mode=1 \
+    persist.data.iwlan.enable=true
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -104,6 +113,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.enc.disable_pframes=1 \
     vendor.vidc.enc.narrow.searchrange=1 \
     vendor.vidc.disable.split.mode=1
+
+# Misc
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.debug.wfd.enable=1
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
