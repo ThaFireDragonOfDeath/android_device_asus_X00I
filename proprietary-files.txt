@@ -1059,6 +1059,8 @@ vendor/lib64/libsensor1.so
 vendor/lib64/libsensor_reg.so
 vendor/lib64/sensor_calibrate.so
 vendor/lib64/sensors.ssc.so
+vendor/lib64/hw/sensors.msm8937_64.so:vendor/lib64/hw/sensors.msm8937.so
+vendor/lib/hw/sensors.msm8937_64.so:vendor/lib/hw/sensors.msm8937.so
 
 # Thermal - from Stock
 vendor/bin/thermal-engine
@@ -1072,7 +1074,7 @@ vendor/bin/time_daemon
 -vendor/lib/libtime_genoff.so
 -vendor/lib64/libtime_genoff.so
 
-# TUI - from tissot 8.1.0 OPM1.171019.026
+# TUI - from Stock
 lib/vendor.qti.hardware.tui_comm@1.0.so
 lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti

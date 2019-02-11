@@ -146,9 +146,9 @@ PRODUCT_PACKAGES += \
 libcnefeatureconfig
 
 # Consumerir HIDL
-PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-impl \
-    android.hardware.ir@1.0-service
+#PRODUCT_PACKAGES += \
+#    android.hardware.ir@1.0-impl \
+#    android.hardware.ir@1.0-service
 
 # Debug
 PRODUCT_PACKAGES += lastdmesg_service
