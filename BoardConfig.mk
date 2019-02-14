@@ -117,7 +117,7 @@ endif
 WITH_DEXPREOPT_BOOT_IMG_ONLY ?= true
 
 # Filesystem
-TARGET_ANDROID_FILESYSTEM_CONFIG_H := $(LOCAL_PATH)/android_filesystem_config.h
+TARGET_FS_CONFIG_GEN := $(LOCAL_PATH)/config.fs
 
 # FM
 BOARD_HAVE_QCOM_FM := true
@@ -154,7 +154,7 @@ TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 TARGET_PROVIDES_LIBLIGHT := true
 
 # Lineage Hardware
-BOARD_HARDWARE_CLASS += hardware/lineage/lineagehw
+BOARD_HARDWARE_CLASS += $(LOCAL_PATH)/lineagehw
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
@@ -173,6 +173,8 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+TARGET_COPY_OUT_VENDOR := system/vendor
+
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
@@ -181,7 +183,7 @@ TARGET_POWERHAL_VARIANT := qcom
 TARGET_HAS_NO_WIFI_STATS := true
 TARGET_USES_INTERACTION_BOOST := true
 
-#TARGET_TAP_TO_WAKE_NODE := "/sys/bus/i2c/drivers/fts_ts/3-0038/fts_gesture_dtwake"
+TARGET_TAP_TO_WAKE_NODE := "/proc/tpd_gesture"
 
 # Properties
 #TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
@@ -222,7 +224,10 @@ USE_SENSOR_MULTI_HAL := true
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy-qc/vendor
-BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy-qc/private
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(LOCAL_PATH)/sepolicy-qc/private
+
+# Treble
+PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true

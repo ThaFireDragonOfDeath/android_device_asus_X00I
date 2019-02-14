@@ -117,6 +117,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Misc
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1
+    config.disable_consumerir=true
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -125,7 +126,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Priv-app permissions whitelist
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.control_privapp_permissions=enforce
+    ro.control_privapp_permissions=disable
 
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -168,4 +169,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
-wifi.interface=wlan0
+    wifi.interface=wlan0
+

@@ -772,8 +772,8 @@ vendor/lib/egl/libESXGLESv2_adreno.so
 vendor/lib64/egl/libESXGLESv2_adreno.so
 
 # Graphics vulkan - from Stock
-#vendor/lib/hw/vulkan.msm8953.so
-#vendor/lib64/hw/vulkan.msm8953.so
+vendor/lib/hw/vulkan.msm8937.so
+vendor/lib64/hw/vulkan.msm8937.so
 
 # Graphics firmware - from Stock
 vendor/firmware/a530_gpmu.fw2
