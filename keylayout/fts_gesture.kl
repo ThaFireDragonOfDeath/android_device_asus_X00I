@@ -28,7 +28,7 @@ key 754   GESTURE_S            VIRTUAL
 key 755   GESTURE_V            VIRTUAL 
 key 756   GESTURE_W            VIRTUAL 
 key 757   GESTURE_Z            VIRTUAL 
-key 758   GESTURE_SWIPE_UP        VIRTUAL 
-key 759   GESTURE_DOUBLE_CLICK      VIRTUAL 
+key 758   GESTURE_SWIPE_UP     VIRTUAL 
+key 759   WAKEUP               VIRTUAL 
 #add by HQ Lingyuguo for gesture end 
 

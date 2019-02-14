@@ -116,7 +116,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Misc
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.debug.wfd.enable=1
+    persist.debug.wfd.enable=1 \
     config.disable_consumerir=true
 
 # Perf
