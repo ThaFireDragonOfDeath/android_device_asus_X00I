@@ -116,9 +116,9 @@
                     <profile name="" format="AUDIO_FORMAT_WMA_PRO"
                              samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000,64000,88200,96000"
                              channelMasks="AUDIO_CHANNEL_OUT_MONO,AUDIO_CHANNEL_OUT_STEREO,AUDIO_CHANNEL_OUT_2POINT1,AUDIO_CHANNEL_OUT_QUAD,AUDIO_CHANNEL_OUT_PENTA,AUDIO_CHANNEL_OUT_5POINT1,AUDIO_CHANNEL_OUT_6POINT1,AUDIO_CHANNEL_OUT_7POINT1"/> -->
-                    <profile name="" format="AUDIO_FORMAT_VORBIS"
+                    <!--<profile name="" format="AUDIO_FORMAT_VORBIS"
                              samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000,64000,88200,96000,128000,176400,192000"
-                             channelMasks="AUDIO_CHANNEL_OUT_STEREO,AUDIO_CHANNEL_OUT_MONO"/>
+                             channelMasks="AUDIO_CHANNEL_OUT_STEREO,AUDIO_CHANNEL_OUT_MONO"/>-->
                     <profile name="" format="AUDIO_FORMAT_AAC_ADTS_LC"
                              samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000,64000,88200,96000"
                              channelMasks="AUDIO_CHANNEL_OUT_STEREO,AUDIO_CHANNEL_OUT_MONO"/>
@@ -272,21 +272,21 @@
         </module>
 
         <!-- A2dp Audio HAL -->
-        <xi:include href="/system/etc/a2dp_audio_policy_configuration.xml"/>
+        <xi:include href="/system/vendor/etc/a2dp_audio_policy_configuration.xml"/>
 
         <!-- Usb Audio HAL -->
-        <xi:include href="/system/etc/usb_audio_policy_configuration.xml"/>
+        <xi:include href="/system/vendor/etc/usb_audio_policy_configuration.xml"/>
 
         <!-- Remote Submix Audio HAL -->
-        <xi:include href="/system/etc/r_submix_audio_policy_configuration.xml"/>
+        <xi:include href="/system/vendor/etc/r_submix_audio_policy_configuration.xml"/>
 
     </modules>
     <!-- End of Modules section -->
 
     <!-- Volume section -->
 
-    <xi:include href="/system/etc/audio_policy_volumes.xml"/>
-    <xi:include href="/system/etc/default_volume_tables.xml"/>
+    <xi:include href="/system/vendor/etc/audio_policy_volumes.xml"/>
+    <xi:include href="/system/vendor/etc/default_volume_tables.xml"/>
 
     <!-- End of Volume section -->
 

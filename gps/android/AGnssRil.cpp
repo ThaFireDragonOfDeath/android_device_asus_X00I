@@ -81,8 +81,15 @@ Return<bool> AGnssRil::updateNetworkState(bool connected, NetworkType type, bool
                 typeout = loc_core::NetworkInfoDataItemBase::TYPE_UNKNOWN;
                 break;
         }
-        mGnss->getGnssInterface()->updateConnectionStatus(connected, typeout);
+        
+        try {
+            mGnss->getGnssInterface()->updateConnectionStatus(connected, typeout);
+        }
+        catch (...) {
+            LOC_LOGE("Failed to update GPS Network state, skipping...");
+        }
     }
+    
     return true;
 }
 

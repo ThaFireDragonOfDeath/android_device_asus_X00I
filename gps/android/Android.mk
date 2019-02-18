@@ -5,6 +5,7 @@ LOCAL_MODULE := android.hardware.gnss@1.0-impl-qti
 LOCAL_MODULE_PATH_32 := $(TARGET_OUT_VENDOR)/lib
 LOCAL_MODULE_PATH_64 := $(TARGET_OUT_VENDOR)/lib64
 LOCAL_MODULE_RELATIVE_PATH := hw
+LOCAL_CPPFLAGS := -fexceptions
 LOCAL_SRC_FILES := \
     AGnss.cpp \
     Gnss.cpp \
