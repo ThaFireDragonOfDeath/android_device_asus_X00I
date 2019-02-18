@@ -105,7 +105,13 @@ PRODUCT_PACKAGES += \
     Snap
 
 PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
+    libmmcamera_interface \
+    camera.msm8937 \
+    libmm-qcamera \
+    libmmjpeg_interface \
+    libmmlib2d_interface
 
 # CNE
 PRODUCT_PACKAGES += \

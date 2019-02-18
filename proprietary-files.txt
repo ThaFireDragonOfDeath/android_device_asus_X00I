@@ -222,8 +222,8 @@ vendor/lib/libmmcamera_ubifocus_lib.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
-vendor/lib/libmmcamera_interface.so
-vendor/lib/libmmjpeg_interface.so
+#vendor/lib/libmmcamera_interface.so
+#vendor/lib/libmmjpeg_interface.so
 
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
@@ -234,9 +234,11 @@ vendor/lib/libflash_pmic.so
 
 # Camera - from Stock
 vendor/bin/mm-qcamera-daemon
-vendor/lib/hw/camera.msm8937.so
+#vendor/lib/hw/camera.msm8937.so
 vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so:vendor/lib/vendor.qti.hardware.camera.device@1.0.so
+vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so:vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 lib/vendor.qti.hardware.camera.device@1.0.so
 lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
