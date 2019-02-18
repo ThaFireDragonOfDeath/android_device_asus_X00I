@@ -235,12 +235,12 @@ vendor/lib/libflash_pmic.so
 # Camera - from Stock
 vendor/bin/mm-qcamera-daemon
 vendor/lib/hw/camera.msm8937.so
--vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so
--lib/vendor.qti.hardware.camera.device@1.0.so
+lib/vendor.qti.hardware.camera.device@1.0.so
 lib64/vendor.qti.hardware.camera.device@1.0.so
--vendor/lib/android.hardware.camera.provider@2.4-impl.so
-vendor/lib64/android.hardware.camera.provider@2.4-impl.so
+vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
+vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
 
 # Camera
 vendor/lib/liboptizoom.so
@@ -250,7 +250,6 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libseemore.so
 -vendor/lib/libts_detected_face_hal.so
 -vendor/lib/libts_face_beautify_hal.so
-vendor/lib/libtrueportrait.so
 vendor/lib/libubifocus.so
 
 # Camera actuators - from Stock
