@@ -222,8 +222,8 @@ vendor/lib/libmmcamera_ubifocus_lib.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
-#vendor/lib/libmmcamera_interface.so
-#vendor/lib/libmmjpeg_interface.so
+vendor/lib/libmmcamera_interface.so
+vendor/lib/libmmjpeg_interface.so
 
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
@@ -234,15 +234,53 @@ vendor/lib/libflash_pmic.so
 
 # Camera - from Stock
 vendor/bin/mm-qcamera-daemon
-#vendor/lib/hw/camera.msm8937.so
+vendor/bin/mm-qcamera-app
+vendor/lib/hw/camera.msm8937.so
+
 vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so
-vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so:vendor/lib/vendor.qti.hardware.camera.device@1.0.so
-vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so:vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 lib/vendor.qti.hardware.camera.device@1.0.so
 lib64/vendor.qti.hardware.camera.device@1.0.so
+vendor/bin/hw/android.hardware.camera.provider@2.4-service
+vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
+lib/android.hardware.camera.provider@2.4.so
+lib64/android.hardware.camera.provider@2.4.so
 vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
+
+lib/android.hardware.camera.common@1.0.so
+lib64/android.hardware.camera.common@1.0.so
+
+lib/android.hardware.camera.device@1.0.so
+lib64/android.hardware.camera.device@1.0.so
+lib/android.hardware.camera.device@3.2.so
+lib64/android.hardware.camera.device@3.2.so
+lib/android.hardware.camera.device@3.3.so
+lib64/android.hardware.camera.device@3.3.so
+
+vendor/lib/camera.device@1.0-impl.so
+vendor/lib/camera.device@3.2-impl.so
+vendor/lib/camera.device@3.3-impl.so
+vendor/lib64/camera.device@1.0-impl.so
+vendor/lib64/camera.device@3.2-impl.so
+vendor/lib64/camera.device@3.3-impl.so
+
+vendor/lib/mmi_camera.so
+
+lib/libjpegHWCompress.so
+lib/libarcsoft_piczoom.so
+lib/libarcsoft_nighthawk.so
+lib/libarcsoft_videostab.so
+lib/libarcsoft_beautyshot.so
+lib/libarcsoft_night_shot.so
+lib/libarcsoft_face_tracking.so
+lib/libarcsoft_picselfie_algorithm.so
+lib/libarcsoft_panorama_burstcapture.so
+lib/libmpbase.so
+lib/libBeautyShotWrapper.so
+lib/libcamera_selfie.so
+lib/libtrueportrait.so
+lib64/libtrueportrait.so
 
 # Camera
 vendor/lib/liboptizoom.so
@@ -253,6 +291,29 @@ vendor/lib/libseemore.so
 -vendor/lib/libts_detected_face_hal.so
 -vendor/lib/libts_face_beautify_hal.so
 vendor/lib/libubifocus.so
+
+# Camera libjni
+lib/libjni_dualcamera.so
+#lib/libjni_filtergenerator.so
+#lib/libjni_hazebuster.so
+lib/libjni_makeupV2.so
+lib/libjni_optizoom.so
+#lib/libjni_seestraight.so
+lib/libjni_sharpshooter.so
+#lib/libjni_trueportrait.so
+#lib/libjni_truescanner_v2.so
+lib/libjni_ubifocus.so
+#lib64/libjni_clearsight.so
+lib64/libjni_dualcamera.so
+#lib64/libjni_filtergenerator.so
+#lib64/libjni_hazebuster.so
+lib64/libjni_makeupV2.so
+lib64/libjni_optizoom.so
+#lib64/libjni_seestraight.so
+lib64/libjni_sharpshooter.so
+#lib64/libjni_trueportrait.so
+#lib64/libjni_truescanner_v2.so
+lib64/libjni_ubifocus.so
 
 # Camera actuators - from Stock
 vendor/lib/libactuator_dw9714_ov13855_ofilm_rear.so
@@ -541,6 +602,8 @@ vendor/etc/camera/ov16880_qtech_front_chromatix.xml
 vendor/etc/camera/ov16880_qtech_rear_chromatix.xml
 vendor/etc/camera/ov5675_d5v15b_chromatix.xml
 vendor/etc/camera/ov8856_chromatix.xml
+etc/mmi/layout/layout_camera_back.xml
+etc/mmi/layout/layout_camera_front.xml
 
 # Camera Arcsoft
 vendor/lib/libarcsoft_arc3dnr_intf.so
@@ -549,6 +612,15 @@ vendor/lib/libarcsoft_arcshdr_intf.so
 vendor/lib/libarcsoft_facebeauty_intf.so
 vendor/lib/libarcsoft_night_hawk_intf.so
 vendor/lib/libarcsoft_vs_intf.so
+lib/libarcsoft_beautyshot.so
+lib/libarcsoft_face_tracking.so
+lib/libarcsoft_hdr.so
+lib/libarcsoft_night_shot.so
+lib/libarcsoft_nighthawk.so
+lib/libarcsoft_panorama_burstcapture.so
+lib/libarcsoft_picselfie_algorithm.so
+lib/libarcsoft_piczoom.so
+lib/libarcsoft_videostab.so
 
 # Camera firmware - from Stock
 vendor/firmware/cpp_firmware_v1_10_0.fw
